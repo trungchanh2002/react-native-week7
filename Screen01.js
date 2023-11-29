@@ -15,7 +15,7 @@ export default function Screen01({ navigation }) {
     navigation.navigate("Screen02");
   };
   useEffect(() => {
-    fetch("https://6540990c45bedb25bfc22490.mockapi.io/api/demo7/user")
+    fetch("http://localhost:3000/user")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error(error));
